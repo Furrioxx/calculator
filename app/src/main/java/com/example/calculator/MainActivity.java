@@ -8,10 +8,6 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import org.w3c.dom.Text;
-
-import java.lang.reflect.Array;
-
 public class MainActivity extends AppCompatActivity {
     private TextView showScreen;
     private float op1 = 0;
@@ -39,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 updateTextView();
-                if(isCurrentlyOp1 == false){
+                if(!isCurrentlyOp1){
                     isCurrentlyOp1 = true;
                     op2 = 0;
                     operator = null;
